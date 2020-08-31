@@ -114,14 +114,29 @@ main {
   grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
 
-  img {
-    width: 100%;
-    border: 3px #fff solid;
+  .item {
+    @include boxStyle;
 
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
+    img {
+      width: 80%;
+      display: block;
+      margin: 1rem auto;
+      border: 3px #fff solid;
+
+      &:hover {
+        opacity: 0.5;
+        border-color: $secondary-color;
+        @include easeOut;
+      }
+    }
+
+    .project-desc {
+      padding: 0.5rem;
+
+      .skills {
+        padding: 5px;
+        @include btnStyle;
+      }
     }
   }
 }

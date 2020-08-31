@@ -16,6 +16,13 @@ $secondary-color: #ea80fc;
   border-radius: 0.6rem;
 }
 
+@mixin btnStyle {
+  display: inline-block;
+  margin: 2px;
+  border-radius: 5px;
+  background: #28a4d9;
+}
+
 // Set Text Color
 // text color is black or white depending on how dark background is
 @function set-text-color($color) {
