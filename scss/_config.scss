@@ -11,6 +11,11 @@ $secondary-color: #ea80fc;
   box-sizing: border-box;
 }
 
+@mixin boxStyle {
+  border: $secondary-color 1px solid;
+  border-radius: 0.6rem;
+}
+
 // Set Text Color
 // text color is black or white depending on how dark background is
 @function set-text-color($color) {

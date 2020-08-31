@@ -103,9 +103,8 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    padding: 1rem 1rem 0.5rem 1rem;
+    @include boxStyle;
   }
 }
 
@@ -131,9 +130,10 @@ main {
 .btn {
   display: block;
   padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
+  margin: 0.5rem;
   color: #fff;
+
+  @include boxStyle;
 
   &:hover {
     background: $secondary-color;
@@ -141,22 +141,22 @@ main {
   }
 }
 
-.btn-dark {
-  @extend .btn;
-  background: lighten($primary-color, 20);
-}
+// .btn-dark {
+//   @extend .btn;
+//   background: lighten($primary-color, 20);
+// }
 
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 50);
-}
+// .btn-light {
+//   @extend .btn;
+//   background: lighten($primary-color, 50);
+// }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+  border-top: $secondary-color 1px solid;
 }
 
 //at bottom cuz want media queries to run after initial css
